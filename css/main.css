@@ -12,7 +12,7 @@
 }
 .header .header__box {
   margin: 0 auto;
-  width: 1250px;
+  max-width: 1250px;
   justify-content: space-between;
   display: flex;
 }
@@ -34,7 +34,7 @@
   color: #FFFFFF;
 }
 
-@media screen and (max-width: 768px) and (min-width: 481px) {
+@media screen and (max-width: 768px) and (min-width: 426px) {
   .header .header__box {
     max-width: 689px;
   }
@@ -45,9 +45,9 @@
     display: none;
   }
 }
-@media screen and (max-width: 480px) and (min-width: 320px) {
+@media screen and (max-width: 425px) and (min-width: 320px) {
   .header .header__box {
-    width: 335px;
+    max-width: 335px;
   }
   .header .header__box .header__img3 {
     display: inline-block;
@@ -109,7 +109,7 @@
   color: #FFFFFF;
 }
 
-@media screen and (max-width: 768px) and (min-width: 481px) {
+@media screen and (max-width: 768px) and (min-width: 426px) {
   .top .top__box {
     justify-content: center;
     display: flex;
@@ -130,7 +130,7 @@
     display: none;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 425px) {
   .top .top__box {
     margin-left: 130px;
     padding: 0;
@@ -163,24 +163,20 @@
   margin-top: 200px;
 }
 .cards .cards__box {
-  justify-content: center;
-  gap: 90px;
+  margin: 0 auto;
+  max-width: 1250px;
+  justify-content: space-between;
   display: flex;
 }
 .cards .cards__box .cards__subbox {
-  padding: 150px 109px 0;
+  padding: 2%;
+  flex-direction: column;
+  display: flex;
   align-items: center;
   background: #F1F1F1;
   border-radius: 8px;
-  height: 204px;
-  width: 350px;
   position: relative;
-  display: flex;
-  flex-direction: column;
-}
-.cards .cards__box .cards__subbox .cards__subbox--img {
-  bottom: 43.66%;
-  position: absolute;
+  max-width: 350px;
 }
 .cards .cards__box .cards__subbox .cards__subbox--text {
   font-family: "Manrope";
@@ -203,18 +199,20 @@
   opacity: 0.5;
 }
 
-@media screen and (max-width: 768px) and (min-width: 481px) {
-  .cards {
-    padding: 0 30px;
-  }
+@media screen and (max-width: 768px) and (min-width: 426px) {
   .cards .cards__box {
-    gap: 20px;
+    max-width: 689px;
+    justify-content: space-between;
   }
   .cards .cards__box .cards__subbox {
-    width: 223px;
+    max-height: 165px;
+    max-width: 223px;
+  }
+  .cards .cards__box .cards__subbox img {
+    width: 80px;
   }
 }
-@media screen and (max-width: 480px) and (min-width: 320px) {
+@media screen and (max-width: 425px) and (min-width: 320px) {
   .cards .cards__box {
     align-items: center;
     flex-direction: column;
@@ -332,7 +330,7 @@
   height: 48px;
 }
 
-@media screen and (max-width: 768px) and (min-width: 481px) {
+@media screen and (max-width: 768px) and (min-width: 426px) {
   .big__box .big__subbox {
     width: 689px;
     text-align: center;
@@ -365,7 +363,7 @@
     width: 339px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 425px) {
   .big__box .big__subbox {
     width: 327px;
     text-align: center;
@@ -403,5 +401,216 @@
   }
   .big__box .big__subbox3 .subbox__box {
     width: 327px;
+  }
+}
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+.container .products__box :nth-child(2) {
+  flex-direction: row-reverse;
+}
+.container .products__box .product__box {
+  margin-top: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .products__box .product__box .img__box {
+  background: #F1F1F1;
+  border-radius: 8px;
+  padding: 10% 10% 10% 10%;
+}
+.container .products__box .product__box .description__box {
+  padding: 10% 0 12% 1%;
+}
+.container .products__box .product__box .description__box .description__text {
+  font-family: "Manrope";
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: #D87D4A;
+}
+.container .products__box .product__box .description__box .description__text2 {
+  max-width: 445px;
+  margin: 16px 0 32px 0;
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.42857px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.container .products__box .product__box .description__box .description__text3 {
+  max-width: 460px;
+  font-family: "Manrope";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.container .products__box .product__box .description__box .description__btn {
+  border: none;
+  padding: 15px 30px;
+  margin-top: 40px;
+  background: #D87D4A;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px) {
+  .container {
+    max-width: 689px;
+  }
+  .container .products__box {
+    max-width: 689px;
+  }
+  .container .products__box .product__box {
+    max-width: 689px;
+    text-align: center;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .container .products__box .product__box .img__box {
+    margin: 0 auto;
+    max-width: 689px;
+    padding: 0;
+  }
+  .container .products__box .product__box .img__box img {
+    margin: 0 auto;
+    max-width: 689px;
+  }
+  .container .products__box .product__box .description__box {
+    margin: 0 auto;
+    max-width: 689px;
+    padding: 52px 98px 0 59px;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 425px) and (min-width: 320px) {
+  .container {
+    max-width: 327px;
+  }
+  .container .products__box {
+    max-width: 327px;
+  }
+  .container .products__box .product__box {
+    text-align: center;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .container .products__box .product__box .img__box {
+    margin: 0 auto;
+    max-width: 327px;
+    padding: 0;
+  }
+  .container .products__box .product__box .img__box img {
+    margin: 0 auto;
+    max-width: 327px;
+  }
+  .container .products__box .product__box .description__box {
+    margin: 0 auto;
+    max-width: 327px;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+  }
+}
+.bottom {
+  margin-top: 100px;
+}
+.bottom .container .bottom__box {
+  justify-content: space-between;
+  display: flex;
+}
+.bottom .container .bottom__box .bottom__subbox {
+  max-width: 445px;
+  padding-top: 147px;
+}
+.bottom .container .bottom__box .bottom__subbox .bottom__text {
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.42857px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.bottom .container .bottom__box .bottom__subbox .bottom__text span {
+  color: #D87D4A;
+}
+.bottom .container .bottom__box .bottom__subbox .bottom__text2 {
+  margin-top: 32px;
+  font-family: "Manrope";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px) {
+  .bottom {
+    margin-top: 100px;
+  }
+  .bottom .container .bottom__box {
+    margin: 0 auto;
+    max-width: 689px;
+    align-items: baseline;
+    flex-direction: column-reverse;
+    display: flex;
+  }
+  .bottom .container .bottom__box .bottom__subbox {
+    max-width: 573px;
+  }
+  .bottom .container .bottom__box .bottom__subbox .bottom__text {
+    text-align: center;
+  }
+  .bottom .container .bottom__box .bottom__subbox .bottom__text2 {
+    text-align: center;
+  }
+  .bottom .container .bottom__subbox2 {
+    margin: 0 auto;
+  }
+  .bottom .container .bottom__subbox2 img {
+    width: 430px;
+  }
+}
+@media screen and (max-width: 425px) and (min-width: 320px) {
+  .bottom {
+    margin-top: 100px;
+  }
+  .bottom .container .bottom__box {
+    margin: 0 auto;
+    max-width: 689px;
+    align-items: baseline;
+    flex-direction: column-reverse;
+    display: flex;
+  }
+  .bottom .container .bottom__box .bottom__subbox {
+    max-width: 573px;
+  }
+  .bottom .container .bottom__box .bottom__subbox .bottom__text {
+    text-align: center;
+  }
+  .bottom .container .bottom__box .bottom__subbox .bottom__text2 {
+    text-align: center;
+  }
+  .bottom .container .bottom__subbox2 {
+    margin: 0 auto;
+  }
+  .bottom .container .bottom__subbox2 img {
+    width: 310px;
   }
 }/*# sourceMappingURL=main.css.map */

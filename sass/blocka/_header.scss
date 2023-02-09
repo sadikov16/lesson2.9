@@ -3,7 +3,7 @@
     padding: 35px 30px;
     .header__box{
         margin: 0 auto;
-        width: 1250px;
+        max-width: 1250px;
         justify-content: space-between;
         display: flex;
         .header__img3{
@@ -25,7 +25,7 @@
         }
     }
 }
-@media screen and (max-width: 768px) and (min-width: 481px){
+@media screen and (max-width: 768px) and (min-width: 426px){
     .header{
         .header__box{
             max-width: 689px;
@@ -38,10 +38,10 @@
         }
     }
 }
-@media screen and (max-width: 480px) and (min-width: 320px){
+@media screen and (max-width: 425px) and (min-width: 320px){
     .header{
         .header__box{
-            width: 335px;
+            max-width: 335px;
             .header__img3{
                 display: inline-block;
             }

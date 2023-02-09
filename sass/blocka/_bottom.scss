@@ -1,0 +1,93 @@
+.bottom{
+    margin-top: 100px;
+    .container{
+        .bottom__box{
+            justify-content: space-between;
+            display: flex;
+            .bottom__subbox{
+                max-width: 445px;
+                padding-top:  147px; ;
+                .bottom__text{
+                    font-family: 'Manrope';
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 44px;
+                    letter-spacing: 1.42857px;
+                    text-transform: uppercase;
+                    color: #000000;
+                    span{
+                        color: #D87D4A;
+                    }
+                }
+                .bottom__text2{
+                    margin-top: 32px;
+                    font-family: 'Manrope';
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: #000000;
+                    mix-blend-mode: normal;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 426px){
+    .bottom{
+        margin-top: 100px;
+        .container{
+            .bottom__box{
+                margin: 0 auto;
+                max-width: 689px;
+                align-items: baseline;
+                flex-direction: column-reverse;
+                display: flex;
+                .bottom__subbox{
+                    max-width: 573px;
+                    .bottom__text{
+                        text-align: center;
+                    }
+                    .bottom__text2{
+                        text-align: center;
+                    }
+                }
+            }
+            .bottom__subbox2{
+                margin: 0 auto;
+                img{
+                    width:430px;
+                }
+            }
+        }
+    } 
+}
+@media screen and (max-width: 425px) and (min-width: 320px){
+    .bottom{
+        margin-top: 100px;
+        .container{
+            .bottom__box{
+                margin: 0 auto;
+                max-width: 689px;
+                align-items: baseline;
+                flex-direction: column-reverse;
+                display: flex;
+                .bottom__subbox{
+                    max-width: 573px;
+                    .bottom__text{
+                        text-align: center;
+                    }
+                    .bottom__text2{
+                        text-align: center;
+                    }
+                }
+            }
+            .bottom__subbox2{
+                margin: 0 auto;
+                img{
+                    width: 310px;
+                }
+            }
+        }
+    } 
+}
